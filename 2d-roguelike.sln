@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2d-roguelike", "Assembly-CSharp.csproj", "{83BEA4B3-0D95-4D33-22C6-0C3EF2C3A00F}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2d-roguelike", "2d-roguelike.csproj", "{B95F9182-CF1B-0D2F-1ABF-067D7A918EE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2d-roguelike", "Assembly-CSharp-Editor.csproj", "{5010B57E-A848-0673-4467-93D00EF7EF41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2d-roguelike.Editor", "2d-roguelike.Editor.csproj", "{B5DC5F88-D423-84BB-ABBD-BDC198DE93E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,19 +11,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83BEA4B3-0D95-4D33-22C6-0C3EF2C3A00F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83BEA4B3-0D95-4D33-22C6-0C3EF2C3A00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83BEA4B3-0D95-4D33-22C6-0C3EF2C3A00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83BEA4B3-0D95-4D33-22C6-0C3EF2C3A00F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5010B57E-A848-0673-4467-93D00EF7EF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5010B57E-A848-0673-4467-93D00EF7EF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5010B57E-A848-0673-4467-93D00EF7EF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5010B57E-A848-0673-4467-93D00EF7EF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95F9182-CF1B-0D2F-1ABF-067D7A918EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95F9182-CF1B-0D2F-1ABF-067D7A918EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95F9182-CF1B-0D2F-1ABF-067D7A918EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95F9182-CF1B-0D2F-1ABF-067D7A918EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5DC5F88-D423-84BB-ABBD-BDC198DE93E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DC5F88-D423-84BB-ABBD-BDC198DE93E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DC5F88-D423-84BB-ABBD-BDC198DE93E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DC5F88-D423-84BB-ABBD-BDC198DE93E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
