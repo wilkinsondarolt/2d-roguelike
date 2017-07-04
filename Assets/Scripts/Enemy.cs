@@ -13,11 +13,11 @@ public class Enemy : MovingObject {
 
     protected override void Start()
     {
+        GameManager.instance.AddEnemyToList(this);
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         base.Start();
     }
-
 
     protected override void AttemptMove<T>(int xDir, int yDir)
     {
@@ -45,6 +45,7 @@ public class Enemy : MovingObject {
     protected override void OnCantMove<T>(T component)
     {
         Player hitPlayer = component as Player;
+        animator.SetTrigger("enemyAttack");
         hitPlayer.loseFood(playerDamage);
     }
 }
