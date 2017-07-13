@@ -1,7 +1,5 @@
-﻿using System;
+﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MovingObject {
@@ -18,8 +16,7 @@ public class Player : MovingObject {
         animator = GetComponent<Animator>();
 
         food = GameManager.instance.playerFoodPoints;
-        base.Start();
-		
+        base.Start();		
 	}
 
     private void OnDisable()
@@ -34,8 +31,8 @@ public class Player : MovingObject {
         int horizontal = 0;
         int vertical = 0;
 
-        horizontal = (int)Input.GetAxisRaw("Horizontal");
-        vertical = (int)Input.GetAxisRaw("Vertical");
+        horizontal = (int)(Input.GetAxisRaw("Horizontal"));
+        vertical = (int)(Input.GetAxisRaw("Vertical"));
 
         if (horizontal != 0)
             vertical = 0;
@@ -49,6 +46,11 @@ public class Player : MovingObject {
         food--;
         base.AttemptMove<T>(xDir, yDir);
         RaycastHit2D hit;
+
+        if (Move(xDir, yDir, out hit))
+        {
+
+        }
 
         CheckIfGameOver();
         GameManager.instance.playersTurn = false;
@@ -88,7 +90,7 @@ public class Player : MovingObject {
 
     public void loseFood(int loss)
     {
-        animator.SetTrigger("PlayerHit");
+        animator.SetTrigger("playerHit");
         food -= loss;
         CheckIfGameOver();
     }
